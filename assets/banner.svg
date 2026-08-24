@@ -1,40 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" role="img" aria-label="Mert Metin Erdemli">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 360" role="img" aria-label="Mert Metin Erdemli">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#070B14"/>
-      <stop offset="55%" stop-color="#0C1424"/>
-      <stop offset="100%" stop-color="#101A2E"/>
+      <stop offset="0%" stop-color="#05080F"/>
+      <stop offset="100%" stop-color="#121B2E"/>
     </linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#E8D5A3"/>
+      <stop offset="0%" stop-color="#F1E0B0"/>
       <stop offset="50%" stop-color="#C9A227"/>
-      <stop offset="100%" stop-color="#8C6B1F"/>
+      <stop offset="100%" stop-color="#8A6718"/>
     </linearGradient>
-    <radialGradient id="glow" cx="82%" cy="18%" r="42%">
-      <stop offset="0%" stop-color="#C9A227" stop-opacity="0.18"/>
+    <radialGradient id="orb" cx="78%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#C9A227" stop-opacity=".28"/>
       <stop offset="100%" stop-color="#C9A227" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9A227" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F4E4B4" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#C9A227" stop-opacity="0"/>
+    </linearGradient>
   </defs>
+  
+<style>
+  .glow { animation: glow 4.5s ease-in-out infinite; }
+  .sweep { animation: sweep 5.5s linear infinite; }
+  .pulse { animation: pulse 2.8s ease-in-out infinite; }
+  @keyframes glow {
+    0%, 100% { opacity: .12; }
+    50% { opacity: .32; }
+  }
+  @keyframes sweep {
+    0% { transform: translateX(-280px); opacity: 0; }
+    18% { opacity: .45; }
+    100% { transform: translateX(1680px); opacity: 0; }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: .55; }
+    50% { opacity: 1; }
+  }
+</style>
 
-  <rect width="1600" height="420" fill="url(#bg)"/>
-  <rect width="1600" height="420" fill="url(#glow)"/>
-
-  <g opacity="0.22" fill="none" stroke="#C9A227" stroke-width="0.6">
-    <path d="M1180 0 L1600 0 L1600 420 L980 420 Z"/>
-    <line x1="1240" y1="0" x2="1080" y2="420"/>
-    <line x1="1360" y1="0" x2="1200" y2="420"/>
-    <line x1="1480" y1="0" x2="1320" y2="420"/>
+  <rect width="1600" height="360" fill="url(#bg)"/>
+  <rect class="glow" width="1600" height="360" fill="url(#orb)"/>
+  <g fill="none" stroke="#C9A227" stroke-opacity=".18" stroke-width=".7">
+    <path d="M1120 0 L1600 0 L1600 360 L980 360 Z"/>
+    <line x1="1260" y1="0" x2="1100" y2="360"/>
+    <line x1="1400" y1="0" x2="1240" y2="360"/>
+    <line x1="1540" y1="0" x2="1380" y2="360"/>
   </g>
-
   <rect x="0" y="0" width="1600" height="3" fill="url(#gold)"/>
-  <rect x="0" y="417" width="1600" height="3" fill="url(#gold)"/>
+  <rect x="0" y="357" width="1600" height="3" fill="url(#gold)"/>
+  <rect class="sweep" x="0" y="0" width="220" height="360" fill="url(#beam)"/>
 
-  <circle cx="96" cy="210" r="46" fill="none" stroke="url(#gold)" stroke-width="1.4"/>
-  <text x="96" y="222" text-anchor="middle" fill="#F4EFE4" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="3">ME</text>
+  <circle cx="110" cy="180" r="52" fill="none" stroke="url(#gold)" stroke-width="1.3"/>
+  <circle class="pulse" cx="110" cy="180" r="58" fill="none" stroke="#C9A227" stroke-width=".5" stroke-opacity=".5"/>
+  <text x="110" y="191" text-anchor="middle" fill="#F6F1E6" font-family="Georgia, Times New Roman, serif" font-size="30" letter-spacing="4">ME</text>
 
-  <text x="176" y="118" fill="#C9A227" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" letter-spacing="6">GITHUB OVERVIEW</text>
-  <text x="176" y="188" fill="#F7F4EC" font-family="Georgia, 'Times New Roman', serif" font-size="46">Mert Metin Erdemli</text>
-  <rect x="176" y="214" width="92" height="1.5" fill="url(#gold)"/>
-  <text x="176" y="258" fill="#D7DEEA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20">Bilgisayar M&#252;hendisi  &#183;  Full-Stack Yaz&#305;l&#305;m M&#252;hendisi</text>
-  <text x="176" y="298" fill="#93A0B5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16">Computer Engineer  &#183;  Adana, T&#252;rkiye  &#183;  Production systems, privately sourced</text>
+  <text x="196" y="128" fill="#C9A227" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" letter-spacing="7">ADANA  ·  PRODUCTION SYSTEMS</text>
+  <text x="196" y="186" fill="#F7F3EA" font-family="Georgia, Times New Roman, serif" font-size="52">Mert Metin Erdemli</text>
+  <rect x="196" y="208" width="78" height="2" fill="url(#gold)"/>
+  <text x="196" y="250" fill="#C9D3E3" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20">Bilgisayar M&#252;hendisi  ·  Full-Stack Yaz&#305;l&#305;m M&#252;hendisi</text>
 </svg>
