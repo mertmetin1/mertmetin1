@@ -141,8 +141,7 @@ Mimari derinliği göstermek için; canlı üretim iddiası yok.
 ## Yığın
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,django,fastapi,dotnet,postgres,redis,react,ts,nextjs,docker,aws,linux,nginx,githubactions&theme=light#gh-light-mode-only" alt="tech stack" />
-  <img src="https://skillicons.dev/icons?i=py,django,fastapi,dotnet,postgres,redis,react,ts,nextjs,docker,aws,linux,nginx,githubactions&theme=dark#gh-dark-mode-only" alt="tech stack" />
+  <img src="https://skillicons.dev/icons?i=py,django,fastapi,dotnet,postgres,redis,react,ts,nextjs,docker,aws,linux,nginx,githubactions" alt="tech stack" />
 </p>
 
 `Python` `Django` `DRF` `FastAPI` `C# / .NET 8` `PostgreSQL` `Redis` `RabbitMQ` `React` `TypeScript` `Next.js` `WPF` `WebView2` `Flutter` `Docker` `AWS` `Nginx` `Cloudflare`
@@ -181,8 +180,7 @@ Production kodu public değil. Konuşmak, demo almak veya referans incelemek iç
 - Medium: [mertmetin-1.medium.com](https://mertmetin-1.medium.com/)
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=mertmetin1&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=default#gh-light-mode-only" alt="GitHub stats" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=mertmetin1&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=github_dark#gh-dark-mode-only" alt="GitHub stats" />
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=mertmetin1&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent" alt="GitHub stats" />
 </p>
 
 <details>
